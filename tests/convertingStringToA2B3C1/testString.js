@@ -1,18 +1,18 @@
 function testString(str) {
-//   let str = "AAAABBBCCCCEEAA";
+  //   let str = "AAAABBBCCCCEEAA";
 
-  if (str[0] === "" || str.match(/\d/)) {
-        // console.log("str пустая");
+  if (str[0] === '' || str.match(/\d/)) {
+    // console.log("str пустая");
     return '';
   }
 
   let count = 1;
-  let startEl = "";
-  let endStr = "";
+  let startEl = '';
+  let endStr = '';
 
-//   console.log(str.length - 1);
+  //   console.log(str.length - 1);
   for (let i = 0; i <= str.length; i++) {
-    if (startEl === "") {
+    if (startEl === '') {
       startEl = str[i];
       continue;
     }
@@ -33,9 +33,8 @@ function testString(str) {
     }
   }
 
-//   console.log(endStr);
-return endStr;
+  //   console.log(endStr);
+  return endStr;
 }
-
 
 module.exports = testString;
